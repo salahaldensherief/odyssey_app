@@ -1,0 +1,55 @@
+name: odyssey
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  dots_indicator: ^4.0.1
+  intl: any
+  shared_preferences: ^2.5.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+  flutter_gen_runner: ^5.3.1
+  build_runner:
+
+flutter:
+
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Medium.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+
+
+flutter_gen:
+  assets:
+    enabled: true
+  fonts:
+    enabled: true
+
+flutter_intl:
+  enabled: true
