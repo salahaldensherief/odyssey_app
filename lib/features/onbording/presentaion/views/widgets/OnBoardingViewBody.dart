@@ -5,6 +5,8 @@ import 'package:odyssey/core/services/shared_preferences_singleton.dart';
 import 'package:odyssey/features/auth/presenation/views/login_page.dart';
 import 'package:odyssey/features/onbording/presentaion/views/widgets/OnBoardingPageView.dart';
 
+import '../../../../../core/widgets/custom_text_bottom.dart';
+
 class OnBoardingViewBody extends StatefulWidget {
   OnBoardingViewBody({super.key});
 
@@ -59,20 +61,13 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
           bottom: 20,
           child: Visibility(
             visible: currentPage == 2 ? true :false,
-            child: TextButton(
+            child: CustomTextBottom(
               onPressed: () {
                 prefs.setBool(KisOnboardingViewSeen, true);
 
                 Navigator.pushReplacementNamed(context, LoginPage.routeName);
               },
-              style: TextButton.styleFrom(
-                minimumSize: Size(400, 50),
-                backgroundColor: Color(0xffD6AC8B),
-              ),
-              child: Text(
-                'ابدأ الآن',
-                style: TextStyle(color: Colors.black, fontSize: 20),
-              ),
+              text: 'ابدأ الآن',
             ),
           ),
         ),
@@ -80,3 +75,4 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
     );
   }
 }
+

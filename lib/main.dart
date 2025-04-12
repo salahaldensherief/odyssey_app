@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:odyssey/core/helper_function/on_generate_routes.dart';
 import 'package:odyssey/core/services/shared_preferences_singleton.dart';
+import 'package:odyssey/core/utils/app_colors_styles.dart';
 import 'package:odyssey/features/splash/presentaion/splash_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -32,7 +33,12 @@ class OdysseyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        primaryColor: AppColors.primaryColor,
+        fontFamily: 'Cairo',
+
+        colorScheme: ColorScheme.fromSeed(
+
+            seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       onGenerateRoute: onGenerateRoutes,
