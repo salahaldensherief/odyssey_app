@@ -75,14 +75,14 @@ class LoginPageViewBody extends StatelessWidget {
                 SocialLoginBotton(
                     onPressed: () {},
                     image: 'assets/images/appleIcons.jpg',
-                    text: 'تسجيل بواسطة جوجل'),
+                    text: 'تسجيل بواسطة ابل'),
                 SizedBox(
                   height: 16,
                 ),
                 SocialLoginBotton(
                     onPressed: () {},
                     image: 'assets/images/facebookIcon.jpg',
-                    text: 'تسجيل بواسطة جوجل'),
+                    text: 'تسجيل بواسطة فيسبوك'),
               ],
             ),
           ),

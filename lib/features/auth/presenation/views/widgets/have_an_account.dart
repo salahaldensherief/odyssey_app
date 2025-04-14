@@ -5,8 +5,8 @@ import 'package:odyssey/features/auth/presenation/views/sign_up_view.dart';
 
 import '../../../../../core/utils/app_text_stayles.dart';
 
-class DontHaveAnAccountWidget extends StatelessWidget {
-  const DontHaveAnAccountWidget({
+class HaveAnAccountWidget extends StatelessWidget {
+  const HaveAnAccountWidget({
     super.key,
   });
 
@@ -16,16 +16,16 @@ class DontHaveAnAccountWidget extends StatelessWidget {
       TextSpan(
         children: [
           TextSpan(
-            text: 'لا تمتلك حساب؟ ',
+            text: 'تمتلك حساب بالفعل؟ ',
             style: TextStyles.semiBold16.copyWith(
               color: Color(0xFF949D9E),
             ),
           ),
           TextSpan(
             recognizer: TapGestureRecognizer()..onTap= (){
-              Navigator.pushNamed(context, SignUpView.routeName);
+              Navigator.pop(context);
             },
-            text: 'قم بإنشاء حساب',
+            text: 'تسجيل دخول',
             style: TextStyles.semiBold16
                 .copyWith(color: AppColors.primaryColor),
           ),

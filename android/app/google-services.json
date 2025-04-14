@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "844474068672",
+    "project_id": "odyssey-f0821",
+    "storage_bucket": "odyssey-f0821.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844474068672:android:3f664dae0be6d300b60725",
+        "android_client_info": {
+          "package_name": "com.example.odyssey"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4wZoEAMhBBcz224ZNaRwMypiGRa-I2-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

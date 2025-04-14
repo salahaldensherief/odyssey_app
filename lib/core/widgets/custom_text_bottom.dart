@@ -16,7 +16,7 @@ class CustomTextBottom extends StatelessWidget {
       ),
       child: Text(
         text,
-        style: TextStyle(color: Colors.black, fontSize: 20),
+        style: TextStyle(color: Colors.white, fontSize: 20),
       ),
     );
   }

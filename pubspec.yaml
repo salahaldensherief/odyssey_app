@@ -19,6 +19,7 @@ dependencies:
   dots_indicator: ^4.0.1
   intl: any
   shared_preferences: ^2.5.3
+  firebase_core: ^3.13.0
 
 dev_dependencies:
   flutter_test:
