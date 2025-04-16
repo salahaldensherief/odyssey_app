@@ -1,4 +1,7 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:odyssey/core/utils/app_text_stayles.dart';
 
 class OrDivider extends StatelessWidget {

@@ -1,5 +1,7 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
 
+// Project imports:
 import '../../../../../core/utils/app_colors_styles.dart';
 
 class CustomCheckBox extends StatelessWidget {

@@ -1,10 +1,14 @@
-import 'package:dots_indicator/dots_indicator.dart';
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Package imports:
+import 'package:dots_indicator/dots_indicator.dart';
+
+// Project imports:
 import 'package:odyssey/constants.dart';
 import 'package:odyssey/core/services/shared_preferences_singleton.dart';
-import 'package:odyssey/features/auth/presenation/views/login_view.dart';
+import 'package:odyssey/features/auth/presenation/views/signin_view.dart';
 import 'package:odyssey/features/onbording/presentaion/views/widgets/OnBoardingPageView.dart';
-
 import '../../../../../core/widgets/custom_text_bottom.dart';
 
 class OnBoardingViewBody extends StatefulWidget {
@@ -65,7 +69,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               onPressed: () {
                 prefs.setBool(KisOnboardingViewSeen, true);
 
-                Navigator.pushReplacementNamed(context, Loginview.routeName);
+                Navigator.pushReplacementNamed(context, signinview.routeName);
               },
               text: 'ابدأ الآن',
             ),

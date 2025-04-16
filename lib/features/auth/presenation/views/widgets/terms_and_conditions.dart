@@ -1,11 +1,14 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:odyssey/core/utils/app_colors_styles.dart';
 import 'package:odyssey/core/utils/app_text_stayles.dart';
 import 'package:odyssey/features/auth/presenation/views/widgets/custom_check_box.dart';
 
 class TermsAndConditions extends StatefulWidget {
-  const TermsAndConditions({super.key});
-
+  const TermsAndConditions({super.key, required this.onChanged});
+final ValueChanged<bool>onChanged;
   @override
   State<TermsAndConditions> createState() => _TermsAndConditionsState();
 }
@@ -18,6 +21,7 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
       children: [
         CustomCheckBox(
           onChecked: (value) {
+            widget.onChanged(value);
             isTermsAccepted = value;
             setState(() {});
           },

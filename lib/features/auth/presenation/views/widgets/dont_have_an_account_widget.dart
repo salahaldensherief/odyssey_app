@@ -1,8 +1,10 @@
+// Flutter imports:
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:odyssey/core/utils/app_colors_styles.dart';
 import 'package:odyssey/features/auth/presenation/views/sign_up_view.dart';
-
 import '../../../../../core/utils/app_text_stayles.dart';
 
 class DontHaveAnAccountWidget extends StatelessWidget {
